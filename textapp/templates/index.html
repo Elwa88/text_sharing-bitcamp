@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Texts :</h1><hr>
+    {% for text in texts %}
+    <h3><a href="{% url 'display' text.id %}">{{text.title}}</a><br></h3>
+    {% endfor %}
+    <hr>
+    <a href="{% url 'add' %}"><button>Add Text</button></a><br>
+    <a href="{% url 'logout' %}"><button>Log Out</button></a>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{text.title}}</title>
+</head>
+<body>
+    <h1>{{text.title}}</h1><hr>
+    <div>{{text.text}}</div>
+    <a href="{% url 'edit' text.id %}"><button>Edit Text</button></a>
+</body>
+</html>
